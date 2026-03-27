@@ -1,4 +1,4 @@
-##This is a simple agent built with adk, there are two important endpoints when considering using the application.
+# This is a simple agent built with adk, there are two important endpoints when considering using the application.
 
 1. **The create session endpoint**
 --
