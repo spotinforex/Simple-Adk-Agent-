@@ -1,4 +1,4 @@
-##This is a simple agent built with adk, there are two important endpoints when considering using the application.
+#This is a simple agent built with adk, there are two important endpoints when considering using the application.
 
 1. **The create session endpoint**
 --
@@ -10,7 +10,7 @@ curl -X POST "http://127.0.0.1:8000/apps/capital_agent/users/user_123/sessions/s
     -H "Content-Type: application/json" \
     -d '{"preferred_language": "English", "visit_count": 5}'
 ```
---
+
 2. **The query endpoint**
 --
 This endpoint is used to interact with the agents.
@@ -36,17 +36,17 @@ curl -X POST "http://127.0.0.1:8000/run" \
   }
 }'
 ```
---
-**Fixes:**
 
+**Fixes:**
+--
 if a query is ran and you get this as a return. ``{"detail":"Session not found: session_abc"}``, This means the session has not been created.
 
 **Extras:**
-
+--
 If you want a web ui interface without having to deal with endpoints issues
 
 3. **Web UI endpoint**
-
+--
 This endpoint opens a ui in your browser to interact with the agent. 
 An example of the endpoint is: 
 ```
